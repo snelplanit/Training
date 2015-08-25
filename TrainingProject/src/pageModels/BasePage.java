@@ -1,4 +1,4 @@
-package automationFramework.pageModels;
+package pageModels;
 
 import org.openqa.selenium.WebDriver;
 
