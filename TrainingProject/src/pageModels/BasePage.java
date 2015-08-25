@@ -1,26 +1,21 @@
-package pageModels;
+package automationFramework.pageModels;
 
-public class BasePage {
+import org.openqa.selenium.WebDriver;
 
-	package automationFramework.pageModels;
-
-
-	import org.openqa.selenium.WebDriver;
-
-	public abstract class BasePage {
+public abstract class BasePage {
 
 	static protected WebDriver d;
-
+	
 	public BasePage(WebDriver driver) 
-
+	
 	{
-
+	
 	d = driver;
-
+	
 	d.switchTo().defaultContent();
-
+	
 	d.manage().timeouts().setScriptTimeout(60, null);
-
+	
 	}
 
 }
