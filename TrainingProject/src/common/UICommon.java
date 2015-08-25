@@ -20,7 +20,7 @@ public class UICommon {
 
 	public static void setElement(String value, By searchBy, WebDriver d)
 	{
-	WebElement elem = GetElement(searchBy, d);
-	elem.sendKeys(value);
+		WebElement elem = GetElement(searchBy, d);
+		elem.sendKeys(value);
 	}
  }

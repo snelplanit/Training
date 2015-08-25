@@ -58,6 +58,6 @@ public class FirstTestCase {
        // Close the driver
        driver.quit();
 
-           }
-
    }
+
+}
