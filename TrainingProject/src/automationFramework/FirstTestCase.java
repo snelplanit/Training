@@ -1,10 +1,10 @@
 package automationFramework;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.*;
-
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import common.UICommon;
 
 public class FirstTestCase {
 
@@ -28,9 +28,10 @@ public class FirstTestCase {
        //Launch the Online Store Website
        driver.get("http://www.store.demoqa.com");
 
-       // Find the element that's ID attribute is 'account'(My Account) 
+	// Find the element that's ID attribute is 'account'(My Account) 
        driver.findElement(MyAccount).click();
-
+       UICommon.ClickElement(MyAccount, driver);
+       
        // Find the element that's ID attribute is 'log' (Username)
        // Enter Username on the element found by above desc.
        driver.findElement(Username).sendKeys("testuser_1"); 
