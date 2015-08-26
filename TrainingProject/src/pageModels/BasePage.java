@@ -2,7 +2,8 @@ package pageModels;
 
 import org.openqa.selenium.WebDriver;
 
-public abstract class BasePage {
+public abstract class BasePage
+{
 
 	static protected WebDriver d;
 	
