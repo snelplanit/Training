@@ -5,7 +5,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import common.UICommon;
-import pageModels.BasePage;
 import pageModels.HomePage;
 
 public class FirstTestCase {
@@ -34,7 +33,8 @@ public class FirstTestCase {
 
        // Find the element that's ID attribute is 'account'(My Account) 
        //driver.findElement(MyAccount).click();
-       UICommon.ClickElement(MyAccount, driver);
+       //UICommon.ClickElement(MyAccount, driver);
+       homepage.ClickMyAccountButton();
        
        // Find the element that's ID attribute is 'log' (Username)
        // Enter Username on the element found by above desc.
