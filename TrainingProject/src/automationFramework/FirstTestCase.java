@@ -5,15 +5,19 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import common.UICommon;
+import pageModels.BasePage;
+import pageModels.HomePage;
 
 public class FirstTestCase {
 
    private static WebDriver driver = null;
-
+ 
    public static void main(String[] args) {
 
        //Search Criteria
-       By MyAccount = By.xpath(".//*[@id='account']/a");
+       //By MyAccount = By.xpath(".//*[@id='account']/a");
+	   HomePage homepage = new HomePage(driver);  //This instantiates the homepage
+	   homepage.ClickMyAccountButton();
        By Username = By.id("log");
        By Password = By.id("pwd");
        By Login = By.id("login");
