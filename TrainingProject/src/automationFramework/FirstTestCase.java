@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import pageModels.HomePage;
 
 public class FirstTestCase {
-
+	
    private static WebDriver driver = null;
  
    public static void main(String[] args) {
@@ -21,8 +21,8 @@ public class FirstTestCase {
        HomePage homepage = new HomePage(driver);  //This instantiates the homepage (only done once)
       
        homepage.ClickMyAccountButton();
-       homepage.TypeMyUserName();
-       homepage.TypeMyPassword();       
+       homepage.TypeMyUserName("testuser_1");
+       homepage.TypeMyPassword("Test@123");       
        homepage.ClickLoginButton();
        
        // Print a Log In message to the screen
@@ -34,5 +34,4 @@ public class FirstTestCase {
        driver.quit();
 
    }
-
 }
