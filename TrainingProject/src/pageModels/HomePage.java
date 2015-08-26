@@ -2,6 +2,7 @@ package pageModels;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import common.UICommon;
 
 public class HomePage extends BasePage
@@ -18,14 +19,14 @@ public class HomePage extends BasePage
 		UICommon.ClickElement(MyAccount, d);
 	}
 	
-	public void TypeMyUserName()
+	public void TypeMyUserName(String string)
 	{
-		UICommon.setElement("testuser_1", Username, d);
+		UICommon.setElement(null, Username, d);
 	}
 	
-	public void TypeMyPassword()
+	public void TypeMyPassword(String string)
 	{
-		UICommon.setElement("Test@123", Password, d);
+		UICommon.setElement(null, Password, d);
 	}
 	
 	public void ClickLoginButton()
