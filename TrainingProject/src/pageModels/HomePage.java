@@ -20,14 +20,14 @@ public class HomePage extends BasePage
 		UICommon.ClickElement(MyAccount, d);
 	}
 	
-	public void TypeMyUserName(String string)
+	public void TypeMyUserName(String value)
 	{
-		UICommon.setElement(null, Username, d);
+		UICommon.setElement(value, Username, d);
 	}
 	
-	public void TypeMyPassword(String string)
+	public void TypeMyPassword(String value)
 	{
-		UICommon.setElement(null, Password, d);
+		UICommon.setElement(value, Password, d);
 	}
 	
 	public void ClickLoginButton()

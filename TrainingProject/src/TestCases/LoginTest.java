@@ -17,8 +17,7 @@ public class LoginTest
 	@Test
 	public void test()
 	{
-		//fail("Not yet implemented");
-		       
+    
 		driver = new FirefoxDriver();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
