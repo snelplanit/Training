@@ -17,7 +17,7 @@ public class LoginTest
 	@Test
 	public void test()
 	{
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 		       
 		driver = new FirefoxDriver();
 
