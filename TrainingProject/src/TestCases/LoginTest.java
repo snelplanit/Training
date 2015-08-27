@@ -1,30 +1,14 @@
 package TestCases;
 
-import static org.junit.Assert.*;
-
-import java.util.concurrent.TimeUnit;
-
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
 import pageModels.HomePage;
 
-public class LoginTest
+public class LoginTest extends BaseTest
 {
-
-	private static WebDriver driver = null;
 	@Test
 	public void test()
 	{
-    
-		driver = new FirefoxDriver();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.get("http://www.store.demoqa.com");
-
-		HomePage homepage = new HomePage(driver);  //This instantiates the homepage (only done once)
+		HomePage homepage = new HomePage(driver);
 		      
 		homepage.ClickMyAccountButton();
 		homepage.TypeMyUserName("testuser_1");
@@ -35,9 +19,5 @@ public class LoginTest
 		System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
 		homepage.ClickLogoutButton();
-
-		// Close the driver
-		driver.quit();
-
 	}
 }
