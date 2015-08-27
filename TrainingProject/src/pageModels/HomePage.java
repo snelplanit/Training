@@ -8,13 +8,13 @@ import common.UICommon;
 public class HomePage extends BasePage 
 {
 	WebDriver d;
-		
+	
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
 		this.d = driver;
 	}
-
+	
 	public void ClickMyAccountButton()
 	{
 		UICommon.ClickElement(MyAccount, d);

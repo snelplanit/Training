@@ -15,7 +15,6 @@ public class LoginTest extends BaseTest
 		homepage.TypeMyPassword("Test@123");       
 		homepage.ClickLoginButton();
 		       
-		// Print a Log In message to the screen
 		System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
 		homepage.ClickLogoutButton();

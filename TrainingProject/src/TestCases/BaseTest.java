@@ -9,11 +9,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest
 {
 	protected static WebDriver driver;
-
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception 
 	{
-
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.store.demoqa.com");
