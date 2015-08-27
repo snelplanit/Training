@@ -7,18 +7,12 @@ import common.UICommon;
 
 public class HomePage extends BasePage 
 {
-	//Search Criteria
-    By MyAccount = By.xpath(".//*[@id='account']/a");	
-    By Username = By.id("log");
-    By Password = By.id("pwd");
-    By Login = By.id("login");
-    By Logout = By.xpath(".//*[@id='account_logout']/a");
-	
-	static WebDriver d;
-
+	WebDriver d;
+		
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
+		this.d = driver;
 	}
 
 	public void ClickMyAccountButton()
@@ -45,5 +39,12 @@ public class HomePage extends BasePage
 	{
 		UICommon.ClickElement(Logout, d);
 	}
-	    
+	
+	//Search Criteria
+    By MyAccount = By.xpath(".//*[@id='account']/a");	
+    By Username = By.id("log");
+    By Password = By.id("pwd");
+    By Login = By.id("login");
+    By Logout = By.xpath(".//*[@id='account_logout']/a");
+	
 }
